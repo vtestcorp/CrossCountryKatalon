@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_06_Select_Value_From_Facility_DropDown</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cf73a172-1ec8-4f37-957d-e4edf65aeb8a</testCaseGuid>
+</TestCaseEntity>
