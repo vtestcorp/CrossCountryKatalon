@@ -45,13 +45,13 @@
       <guid>d09ad38b-e32a-451d-9533-17d6c5da6b4b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC11_Verify Social icon facebook is displayed on Home page</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC11_Verify Social icons on Home Page</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>625a8d72-8694-4b13-87d7-b0fac5467a3c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC12_Verify the Facility Dropdown is Functional</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC12_Verify Facility Dropdown functionality</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9e75c1fe-ca96-4692-b601-a92a7d76a5cd</guid>
@@ -63,19 +63,19 @@
       <guid>34d25fea-4470-4efd-bf03-0a3c5c78ca1d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC22_Verify the Go to HomePage Functionality on Appointment Confirmation Page</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC22_Verify the Go to HomePage Functionality</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>641ad7df-34b7-4620-b9fa-cc53e8274326</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC15_Verify the History Functionality From Hamburger Menu</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC15_Verify the Functionality of History</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>81ec31a2-781f-4d25-9ade-39c2a1834e02</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC21_Verify the Profile Functionality From Hamburger Menu</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC21_Verify the Profile Functionality</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>cb52713f-f254-43df-bc96-fb3d73ae1c22</guid>
@@ -87,13 +87,13 @@
       <guid>9b31941c-c32e-48a2-9254-ed8ee5d2c50d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC17_Verify the Logout Functionality From Hamburger Menu</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC17_Verify the Logout Functionality</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9a0feeab-969d-46f0-803b-5bf1e79c5f07</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC19_Verify the Home Functinality From Hamburger Menu</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC19_Verify the Home Functinality</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6f935428-674c-4cce-b924-41035297fe53</guid>
@@ -105,7 +105,7 @@
       <guid>76a38b61-bf88-49fc-847c-4c7541826a14</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC23__Verify Functionality Of Checkbox Apply For Redmission</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC23_Verify Functionalityof Apply For Redmission Checkbox</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>dc9a7f7c-fa11-4a17-8077-2aac601a194f</guid>
@@ -159,7 +159,7 @@
       <guid>875e15df-2466-4241-a697-d412c325bc6a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC10_Verify Cura HelthCare Service Title is displayed on Home page</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC10_Verify Cura HelthCare Service Title</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1fcb0c8d-ed3b-42e1-808b-4df55f38ce4e</guid>
