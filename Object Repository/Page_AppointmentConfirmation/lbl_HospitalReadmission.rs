@@ -3,8 +3,7 @@
    <description></description>
    <name>lbl_HospitalReadmission</name>
    <tag></tag>
-   <elementGuidId>f6639ed7-07ac-41e1-9b29-d4620b6ce113</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>2b1c78d6-27b9-4a6f-8202-a078a5906760</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

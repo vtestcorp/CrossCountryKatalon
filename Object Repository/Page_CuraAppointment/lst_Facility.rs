@@ -3,8 +3,7 @@
    <description></description>
    <name>lst_Facility</name>
    <tag></tag>
-   <elementGuidId>1e1fa403-53a7-4d42-a2c1-2e5265f9c4c4</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>4f65af4a-3b80-46ed-a3b4-9a3ee9fbf8cd</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

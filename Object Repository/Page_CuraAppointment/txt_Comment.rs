@@ -3,8 +3,7 @@
    <description></description>
    <name>txt_Comment</name>
    <tag></tag>
-   <elementGuidId>10e69ee1-30d0-4eb3-8535-474431366216</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>f297d2ec-3215-40f8-ab08-70b5c85597d5</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

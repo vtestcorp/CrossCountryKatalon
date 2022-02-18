@@ -3,8 +3,7 @@
    <description></description>
    <name>lbl_Facility</name>
    <tag></tag>
-   <elementGuidId>a3c8add4-4890-488b-ac62-746f02f8596b</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>92d3b773-3c29-45a7-b748-664c54dbe332</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

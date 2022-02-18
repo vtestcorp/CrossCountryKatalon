@@ -3,8 +3,7 @@
    <description></description>
    <name>txt_Password</name>
    <tag></tag>
-   <elementGuidId>37f2f59d-2221-40cf-93bf-f2329792900c</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>4931db5c-572d-4b50-9fd5-05c8c9228141</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
