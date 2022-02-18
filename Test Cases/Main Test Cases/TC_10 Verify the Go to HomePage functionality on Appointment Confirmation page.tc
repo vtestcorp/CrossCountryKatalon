@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC_10 Verify the Go to HomePage functionality on Appointment Confirmation page</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>16d46761-bacf-42d0-9c6a-8a495f5c5b10</testCaseGuid>
-</TestCaseEntity>

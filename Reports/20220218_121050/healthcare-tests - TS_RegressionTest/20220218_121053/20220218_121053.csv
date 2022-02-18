@@ -1,0 +1,51 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+healthcare-tests - TS_RegressionTest,Firefox 94.0,,,2022-02-18 12:11:01,2022-02-18 12:12:06,1m - 5.050s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Firefox 94.0,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",,2022-02-18 12:11:02,2022-02-18 12:11:26,24.484s,PASSED
+"comment(""Story: Login to CURA system"")",Firefox 94.0,,,2022-02-18 12:11:03,2022-02-18 12:11:04,1.103s,PASSED
+"comment(""Given that the user has the valid login information"")",Firefox 94.0,,,2022-02-18 12:11:04,2022-02-18 12:11:04,0.049s,PASSED
+openBrowser(G_SiteURL),Firefox 94.0,,,2022-02-18 12:11:04,2022-02-18 12:11:20,15.769s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Firefox 94.0,,,2022-02-18 12:11:20,2022-02-18 12:11:21,1.218s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), Username)",Firefox 94.0,,,2022-02-18 12:11:21,2022-02-18 12:11:22,0.758s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), Password)",Firefox 94.0,,,2022-02-18 12:11:22,2022-02-18 12:11:23,1.411s,PASSED
+"comment(""When he logins to CURA system"")",Firefox 94.0,,,2022-02-18 12:11:23,2022-02-18 12:11:23,0.002s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Firefox 94.0,,,2022-02-18 12:11:23,2022-02-18 12:11:24,1.004s,PASSED
+"comment(""Then he should be able to login successfully"")",Firefox 94.0,,,2022-02-18 12:11:24,2022-02-18 12:11:24,0.006s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",Firefox 94.0,,,2022-02-18 12:11:24,2022-02-18 12:11:25,0.586s,PASSED
+closeBrowser(),Firefox 94.0,,,2022-02-18 12:11:25,2022-02-18 12:11:26,1.521s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Firefox 94.0,"Verify if users can book an appointment sucessfully.
+Pre-condition: Users have already logged in
+
+Steps:
+- Fill in appoinment's information
+- Click on appointment's button
+
+Expected results:
+Appointment Confirmation page is displayed",,2022-02-18 12:11:26,2022-02-18 12:12:02,35.526s,PASSED
+"comment(""Story: Book an appointment"")",Firefox 94.0,,,2022-02-18 12:11:27,2022-02-18 12:11:27,0.003s,PASSED
+"comment(""Given that the user has logged into their account"")",Firefox 94.0,,,2022-02-18 12:11:27,2022-02-18 12:11:27,0.013s,PASSED
+openBrowser(G_SiteURL),Firefox 94.0,,,2022-02-18 12:11:27,2022-02-18 12:11:40,13.399s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""John Doe"", ""Password"":""ThisIsNotAPassword""], STOP_ON_FAILURE)",Firefox 94.0,,,2022-02-18 12:11:40,2022-02-18 12:11:48,7.290s,PASSED
+"comment(""And Appointment page is displayed"")",Firefox 94.0,,,2022-02-18 12:11:48,2022-02-18 12:11:48,0.002s,PASSED
+if (true),Firefox 94.0,,,2022-02-18 12:11:48,2022-02-18 12:11:54,6.788s,PASSED
+"comment(""When he fills in valid information in Appointment page"")",Firefox 94.0,,,2022-02-18 12:11:54,2022-02-18 12:11:55,0.003s,PASSED
+"click(findTestObject(""Page_CuraAppointment/btn_BookAppointment""))",Firefox 94.0,,,2022-02-18 12:11:55,2022-02-18 12:11:56,1.204s,PASSED
+"verifyTextPresent(""Appointment Confirmation"", false)",Firefox 94.0,,,2022-02-18 12:11:56,2022-02-18 12:11:56,0.454s,PASSED
+"comment(""Then he should be able to book a new appointment"")",Firefox 94.0,,,2022-02-18 12:11:56,2022-02-18 12:11:56,0.002s,PASSED
+if (true),Firefox 94.0,,,2022-02-18 12:11:56,2022-02-18 12:11:59,2.733s,PASSED
+takeScreenshot(),Firefox 94.0,,,2022-02-18 12:11:59,2022-02-18 12:12:00,0.892s,PASSED
+closeBrowser(),Firefox 94.0,,,2022-02-18 12:12:00,2022-02-18 12:12:02,2.157s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC3_Visual Testing Example,Firefox 94.0,,,2022-02-18 12:12:02,2022-02-18 12:12:06,4.066s,FAILED
+"comment(""Story: Book an appointment"")",Firefox 94.0,,,2022-02-18 12:12:03,2022-02-18 12:12:03,0.007s,PASSED
+"comment(""Given that the user has logged into their account"")",Firefox 94.0,,,2022-02-18 12:12:03,2022-02-18 12:12:03,0.002s,PASSED
+openBrowser(G_SiteURL),Firefox 94.0,,,2022-02-18 12:12:03,2022-02-18 12:12:06,3.387s,FAILED

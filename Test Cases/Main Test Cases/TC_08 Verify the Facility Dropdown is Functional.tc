@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC_08 Verify the Facility Dropdown is Functional</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e231e5f2-5eb4-48f7-ada2-490f7be99e86</testCaseGuid>
-</TestCaseEntity>

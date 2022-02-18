@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC16_To Verify Date is Required</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2bd096f8-96ef-46b7-b5c0-c601890efe0e</testCaseGuid>
+   <variable>
+      <defaultValue>'John Doe'</defaultValue>
+      <description></description>
+      <id>98fd690e-f2a0-4593-b56a-a8aca3002906</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'ThisIsNotAPassword'</defaultValue>
+      <description></description>
+      <id>7b6be546-02ef-4aea-b1a6-33a44a8d6a2c</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>
