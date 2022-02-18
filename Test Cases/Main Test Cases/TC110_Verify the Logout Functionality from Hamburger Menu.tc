@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC110_Verify the Logout Functionality from Hamburger Menu</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>3255ec23-66ee-4912-bd73-c1454abed64d</testCaseGuid>
-</TestCaseEntity>

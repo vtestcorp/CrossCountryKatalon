@@ -35,13 +35,14 @@ WebUI.click(findTestObject('Page_Login/btn_Login'))
 
 WebUI.comment('User Login Sucessfully')
 
-WebUI.click(findTestObject('Page_AppointmentConfirmation/a_Make Appointment'))
+WebUI.click(findTestObject('Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment'))
 
 WebUI.comment('User navigate Make appointment page')
 
 WebUI.click(findTestObject('Page_CuraAppointment/btn_BookAppointment'))
 
-WebUI.verifyElementPresent(findTestObject('Page_AppointmentConfirmation/h2_Appointment Confirmation'), 0)
+WebUI.verifyTextPresent('Appointment Confirmation', false)
 
 WebUI.closeBrowser()
 
+CustomKeywords.'com.example.WebUICustomKeywords.getHtmlTableColumns'(null, '')

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC101_Verify Login with invalid Username</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>df8630bf-71a9-40b2-a639-022046e4af79</testCaseGuid>
-</TestCaseEntity>
