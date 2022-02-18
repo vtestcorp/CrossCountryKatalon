@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC_07 Verify Social icon facebook is displayed on Home page</name>
-   <tag>Verify Element  present</tag>
-   <comment></comment>
-   <testCaseGuid>cf9430c0-33f9-45e7-a654-33b5da986713</testCaseGuid>
-</TestCaseEntity>
