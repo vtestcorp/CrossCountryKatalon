@@ -3,8 +3,7 @@
    <description></description>
    <name>lbl_Program</name>
    <tag></tag>
-   <elementGuidId>e0ae794a-882b-4466-af64-4bf8474976f1</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>ed12c1cf-7f76-4e6c-959a-7453fd4a3c45</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

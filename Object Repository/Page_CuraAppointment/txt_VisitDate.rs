@@ -3,8 +3,7 @@
    <description></description>
    <name>txt_VisitDate</name>
    <tag></tag>
-   <elementGuidId>065c5096-4d6c-43fa-9e81-3689a68a48a1</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>ef97d6e5-a757-4d42-a22f-a0568b6724d6</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

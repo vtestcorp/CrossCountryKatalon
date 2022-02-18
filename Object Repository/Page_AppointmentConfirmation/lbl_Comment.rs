@@ -3,8 +3,7 @@
    <description></description>
    <name>lbl_Comment</name>
    <tag></tag>
-   <elementGuidId>fc32fe8e-ee32-430a-b04b-5f38700eb3da</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>b70ba152-d5df-4e11-9c8a-4730577f03f8</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
