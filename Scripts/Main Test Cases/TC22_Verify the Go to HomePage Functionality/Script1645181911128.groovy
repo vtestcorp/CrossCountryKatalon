@@ -41,9 +41,9 @@ WebUI.click(findTestObject('Page_AppointmentConfirmation/td_28'))
 
 WebUI.click(findTestObject('Page_CURA Healthcare Service/button_Book Appointment'))
 
-WebUI.verifyElementPresent(findTestObject('Page_AppointmentConfirmation/h2_Appointment Confirmation'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_AppointmentConfirmation/h2_Appointment Confirmation'), GlobalVariable.G_ShortTimeOut)
 
-WebUI.verifyElementPresent(findTestObject('Page_AppointmentConfirmation/a_Go to Homepage'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_AppointmentConfirmation/a_Go to Homepage'), GlobalVariable.G_ShortTimeOut)
 
 WebUI.comment('Go To Hmepage option is displayed on page')
 

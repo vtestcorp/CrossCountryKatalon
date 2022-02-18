@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData'
 
 WebUI.click(findTestObject('Page_Login/btn_Login'))
 
-WebUI.scrollToElement(findTestObject('Page_CURA Healthcare Service/i_infokatalon.com_fa fa-facebook fa-fw fa-3x'), 0)
+WebUI.scrollToElement(findTestObject('Page_CURA Healthcare Service/i_infokatalon.com_fa fa-facebook fa-fw fa-3x'), GlobalVariable.G_ShortTimeOut)
 
 WebUI.comment('Scrolling to the Required Element')
 

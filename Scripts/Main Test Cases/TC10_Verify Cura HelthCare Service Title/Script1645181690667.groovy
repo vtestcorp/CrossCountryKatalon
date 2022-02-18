@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData'
 
 WebUI.click(findTestObject('Page_Login/btn_Login'))
 
-WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h1_CURA Healthcare Service'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h1_CURA Healthcare Service'), GlobalVariable.G_ShortTimeOut)
 
 WebUI.closeBrowser()
 

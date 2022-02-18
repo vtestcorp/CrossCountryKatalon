@@ -37,7 +37,7 @@ WebUI.comment('Clicked on Hamburgur menu')
 
 WebUI.click(findTestObject('Page_CuraHomepage/a_History'))
 
-WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h2_History'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h2_History'), GlobalVariable.G_ShortTimeOut)
 
 WebUI.closeBrowser()
 

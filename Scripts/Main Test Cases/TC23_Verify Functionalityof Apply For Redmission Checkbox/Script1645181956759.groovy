@@ -27,9 +27,9 @@ WebUI.click(findTestObject('Page_CuraHomepage/btn_MakeAppointment'))
 
 WebUI.comment('User click on Make Appoinment')
 
-WebUI.setText(findTestObject('Page_Login/txt_UserName'), 'John Doe')
+WebUI.setText(findTestObject('Page_Login/txt_UserName'), findTestData('TestData').getValue(1, 1))
 
-WebUI.setText(findTestObject('Page_Login/txt_Password'), 'ThisIsNotAPassword')
+WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData').getValue(2, 1))
 
 WebUI.click(findTestObject('Page_Login/btn_Login'))
 
@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Page_CuraAppointment/select_'))
 
 WebUI.getText(findTestObject('Page_AppointmentConfirmation/label_Apply for hospital readmission'))
 
-WebUI.verifyElementPresent(findTestObject('Page_CuraAppointment/chk_Readmission'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_CuraAppointment/chk_Readmission'), GlobalVariable.G_ShortTimeOut)
 
 WebUI.verifyElementClickable(findTestObject('Page_AppointmentConfirmation/input_'))
 

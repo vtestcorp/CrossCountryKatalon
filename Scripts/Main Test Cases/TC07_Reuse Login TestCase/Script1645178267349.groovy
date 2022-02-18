@@ -23,8 +23,8 @@ WebUI.openBrowser(GlobalVariable.G_SiteURL)
 
 WebUI.maximizeWindow()
 
-WebUI.callTestCase(findTestCase('Common Test Cases/Login'), [('Username') : 'John Doe', ('Password') : 'ThisIsNotAPassword'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common Test Cases/Login'), [('Username') : findTestData('TestData').getValue(1, 1), ('Password') : findTestData(
+            'TestData').getValue(2, 1)], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_AppointmentConfirmation/a_Make Appointment'))
 

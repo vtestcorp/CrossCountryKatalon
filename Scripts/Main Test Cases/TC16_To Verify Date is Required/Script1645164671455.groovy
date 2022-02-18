@@ -27,9 +27,9 @@ WebUI.click(findTestObject('Page_CuraHomepage/btn_MakeAppointment'))
 
 WebUI.comment('User Click on Make Appointment Button')
 
-WebUI.setText(findTestObject('Page_Login/txt_UserName'), username)
+WebUI.setText(findTestObject('Page_Login/txt_UserName'), findTestData('TestData').getValue(1, 1))
 
-WebUI.setText(findTestObject('Page_Login/txt_Password'), password)
+WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData').getValue(2, 1))
 
 WebUI.click(findTestObject('Page_Login/btn_Login'))
 
@@ -46,3 +46,4 @@ WebUI.verifyTextPresent('Appointment Confirmation', false)
 WebUI.closeBrowser()
 
 CustomKeywords.'com.example.WebUICustomKeywords.getHtmlTableColumns'(null, '')
+

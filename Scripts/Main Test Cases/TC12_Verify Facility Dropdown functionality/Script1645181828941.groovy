@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Page_Login/btn_Login'))
 WebUI.click(findTestObject('Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center'))
 
 WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center'), 
-    0)
+    GlobalVariable.G_ShortTimeOut)
 
 WebUI.closeBrowser()
 

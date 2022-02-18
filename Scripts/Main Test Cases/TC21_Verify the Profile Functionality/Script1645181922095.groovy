@@ -27,15 +27,15 @@ WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData'
 
 WebUI.click(findTestObject('Page_Login/btn_Login'))
 
-WebUI.verifyElementPresent(findTestObject('Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle'), GlobalVariable.G_ShortTimeOut)
 
 WebUI.click(findTestObject('Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle'))
 
-WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/a_Profile'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/a_Profile'), GlobalVariable.G_ShortTimeOut)
 
 WebUI.click(findTestObject('Page_CURA Healthcare Service/a_Profile'))
 
-WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h2_Profile'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h2_Profile'), GlobalVariable.G_ShortTimeOut)
 
 WebUI.comment('Profile Page get displayed after click on Profile option From Hamburger Menu')
 

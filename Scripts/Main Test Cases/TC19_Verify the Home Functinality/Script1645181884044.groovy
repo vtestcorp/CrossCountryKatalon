@@ -33,5 +33,5 @@ WebUI.click(findTestObject('Page_AppointmentConfirmation/a_CURA Healthcare_menu-
 
 WebUI.click(findTestObject('Page_AppointmentConfirmation/a_Home'))
 
-WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h1_CURA Healthcare Service'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_CURA Healthcare Service/h1_CURA Healthcare Service'), GlobalVariable.G_ShortTimeOut)
 
