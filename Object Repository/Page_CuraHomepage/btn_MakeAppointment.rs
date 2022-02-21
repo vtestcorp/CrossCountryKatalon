@@ -3,8 +3,7 @@
    <description></description>
    <name>btn_MakeAppointment</name>
    <tag></tag>
-   <elementGuidId>0798882b-420b-459a-9693-6563c4b57f9b</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>36ab10ef-42ea-4957-9e53-f8e9886ae996</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

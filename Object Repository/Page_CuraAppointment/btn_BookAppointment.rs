@@ -3,8 +3,7 @@
    <description></description>
    <name>btn_BookAppointment</name>
    <tag></tag>
-   <elementGuidId>20187b05-12f6-445d-b342-3eb582e2e696</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>61c6be2b-37a2-4d86-980b-785e985fb89d</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

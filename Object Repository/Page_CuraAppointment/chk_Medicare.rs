@@ -3,8 +3,7 @@
    <description></description>
    <name>chk_Medicare</name>
    <tag></tag>
-   <elementGuidId>fb77ffde-d936-4c9c-9a52-5cc4e3e3e99b</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>7a5b37b0-ef96-4ffb-975e-a4a0d51c9ef1</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

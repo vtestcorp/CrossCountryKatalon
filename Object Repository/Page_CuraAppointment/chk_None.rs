@@ -3,8 +3,7 @@
    <description></description>
    <name>chk_None</name>
    <tag></tag>
-   <elementGuidId>900d0276-3a43-47d0-9e7c-121f9be4f1fb</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>0ca90087-4c70-4ce8-b79b-b0dfca22ae31</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

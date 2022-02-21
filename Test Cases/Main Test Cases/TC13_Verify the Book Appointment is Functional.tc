@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC13_Verify the Book Appointment is Functional</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3a95a6a-d076-4063-a681-f9bfb74f31bf</testCaseGuid>
+</TestCaseEntity>

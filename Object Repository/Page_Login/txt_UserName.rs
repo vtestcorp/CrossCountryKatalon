@@ -3,8 +3,7 @@
    <description></description>
    <name>txt_UserName</name>
    <tag></tag>
-   <elementGuidId>d4701411-1088-499f-bf71-13a2dc14ee13</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>e964d4cf-97b4-45cb-a405-f5d3df04fe38</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

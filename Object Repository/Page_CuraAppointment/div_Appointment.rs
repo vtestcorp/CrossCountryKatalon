@@ -3,8 +3,7 @@
    <description></description>
    <name>div_Appointment</name>
    <tag></tag>
-   <elementGuidId>48685a0e-0ad1-46ea-a541-351a2cea577d</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>c255d16b-6f69-4f80-9054-e354f56604e6</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

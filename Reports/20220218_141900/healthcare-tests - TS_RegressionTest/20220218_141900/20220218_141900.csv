@@ -1,0 +1,292 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+healthcare-tests - TS_RegressionTest,Chrome 98.0.4758.102,,,2022-02-18 14:19:04,2022-02-18 14:24:17,5m - 12.773s,ERROR
+,,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Chrome 98.0.4758.102,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",,2022-02-18 14:19:04,2022-02-18 14:19:17,12.686s,PASSED
+"comment(""Story: Login to CURA system"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:05,2022-02-18 14:19:05,0.124s,PASSED
+"comment(""Given that the user has the valid login information"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:05,2022-02-18 14:19:05,0.007s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:19:05,2022-02-18 14:19:12,6.599s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:19:12,2022-02-18 14:19:13,0.989s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), Username)",Chrome 98.0.4758.102,,,2022-02-18 14:19:13,2022-02-18 14:19:14,0.969s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), Password)",Chrome 98.0.4758.102,,,2022-02-18 14:19:14,2022-02-18 14:19:15,0.943s,PASSED
+"comment(""When he logins to CURA system"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:15,2022-02-18 14:19:15,0.005s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:19:15,2022-02-18 14:19:16,1.040s,PASSED
+"comment(""Then he should be able to login successfully"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:16,2022-02-18 14:19:16,0.005s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",Chrome 98.0.4758.102,,,2022-02-18 14:19:16,2022-02-18 14:19:16,0.440s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:19:16,2022-02-18 14:19:17,0.844s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC3_Visual Testing Example,Chrome 98.0.4758.102,,,2022-02-18 14:19:17,2022-02-18 14:19:39,22.279s,PASSED
+"comment(""Story: Book an appointment"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:18,2022-02-18 14:19:18,0.003s,PASSED
+"comment(""Given that the user has logged into their account"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:18,2022-02-18 14:19:18,0.002s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:19:18,2022-02-18 14:19:22,4.341s,PASSED
+"takeScreenshotAsCheckpoint(""login page"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:22,2022-02-18 14:19:23,1.317s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""John Doe"", ""Password"":""ThisIsNotAPassword""], STOP_ON_FAILURE)",Chrome 98.0.4758.102,,,2022-02-18 14:19:23,2022-02-18 14:19:28,4.559s,PASSED
+"comment(""And Appointment page is displayed"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:28,2022-02-18 14:19:28,0.003s,PASSED
+if (true),Chrome 98.0.4758.102,,,2022-02-18 14:19:28,2022-02-18 14:19:32,4.358s,PASSED
+"comment(""When he fills in valid information in Appointment page"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:32,2022-02-18 14:19:32,0.002s,PASSED
+"click(findTestObject(""Page_CuraAppointment/btn_BookAppointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:19:32,2022-02-18 14:19:33,0.895s,PASSED
+"verifyTextPresent(""Appointment Confirmation"", false)",Chrome 98.0.4758.102,,,2022-02-18 14:19:33,2022-02-18 14:19:34,0.437s,PASSED
+"comment(""Then he should be able to book a new appointment"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:34,2022-02-18 14:19:34,0.006s,PASSED
+if (true),Chrome 98.0.4758.102,,,2022-02-18 14:19:34,2022-02-18 14:19:38,4.169s,PASSED
+takeScreenshot(),Chrome 98.0.4758.102,,,2022-02-18 14:19:38,2022-02-18 14:19:39,0.839s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:19:39,2022-02-18 14:19:39,0.845s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Chrome 98.0.4758.102,"Verify if users can book an appointment sucessfully.
+Pre-condition: Users have already logged in
+
+Steps:
+- Fill in appoinment's information
+- Click on appointment's button
+
+Expected results:
+Appointment Confirmation page is displayed",,2022-02-18 14:19:39,2022-02-18 14:20:32,53.048s,PASSED
+"comment(""Story: Book an appointment"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:40,2022-02-18 14:19:40,0.005s,PASSED
+"comment(""Given that the user has logged into their account"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:40,2022-02-18 14:19:40,0.006s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:19:40,2022-02-18 14:19:45,4.663s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""John Doe"", ""Password"":""ThisIsNotAPassword""], STOP_ON_FAILURE)",Chrome 98.0.4758.102,,,2022-02-18 14:19:45,2022-02-18 14:19:59,14.352s,PASSED
+"comment(""And Appointment page is displayed"")",Chrome 98.0.4758.102,,,2022-02-18 14:19:59,2022-02-18 14:19:59,0.002s,PASSED
+if (true),Chrome 98.0.4758.102,,,2022-02-18 14:19:59,2022-02-18 14:20:15,16.138s,PASSED
+"comment(""When he fills in valid information in Appointment page"")",Chrome 98.0.4758.102,,,2022-02-18 14:20:15,2022-02-18 14:20:15,0.000s,PASSED
+"click(findTestObject(""Page_CuraAppointment/btn_BookAppointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:20:15,2022-02-18 14:20:18,2.290s,PASSED
+"verifyTextPresent(""Appointment Confirmation"", false)",Chrome 98.0.4758.102,,,2022-02-18 14:20:18,2022-02-18 14:20:19,1.661s,PASSED
+"comment(""Then he should be able to book a new appointment"")",Chrome 98.0.4758.102,,,2022-02-18 14:20:19,2022-02-18 14:20:19,0.002s,PASSED
+if (true),Chrome 98.0.4758.102,,,2022-02-18 14:20:19,2022-02-18 14:20:29,9.944s,PASSED
+takeScreenshot(),Chrome 98.0.4758.102,,,2022-02-18 14:20:29,2022-02-18 14:20:32,2.390s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:20:32,2022-02-18 14:20:32,0.856s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC104_Verify Social icon facebook is displayed on Home page,Chrome 98.0.4758.102,,Verify Element  present,2022-02-18 14:20:32,2022-02-18 14:20:43,10.793s,PASSED
+"comment(""Story: Display of Social icons on home page"")",Chrome 98.0.4758.102,,,2022-02-18 14:20:33,2022-02-18 14:20:33,0.003s,PASSED
+"openBrowser(findTestData(""TestData"").getValue(1, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:20:33,2022-02-18 14:20:38,4.536s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:20:38,2022-02-18 14:20:39,0.926s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:20:39,2022-02-18 14:20:40,1.063s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(3, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:20:40,2022-02-18 14:20:41,1.000s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:20:41,2022-02-18 14:20:42,1.103s,PASSED
+"scrollToElement(findTestObject(""Page_CURA Healthcare Service/i_infokatalon.com_fa fa-facebook fa-fw fa-3x""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:20:42,2022-02-18 14:20:42,0.406s,PASSED
+"comment(""Scrolling to the Required Element"")",Chrome 98.0.4758.102,,,2022-02-18 14:20:42,2022-02-18 14:20:42,0.005s,PASSED
+enableSmartWait(),Chrome 98.0.4758.102,,,2022-02-18 14:20:42,2022-02-18 14:20:43,0.023s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:20:43,2022-02-18 14:20:43,0.747s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC105_Verify the Facility Dropdown is Functional,Chrome 98.0.4758.102,,,2022-02-18 14:20:43,2022-02-18 14:20:54,11.045s,PASSED
+"comment(""Checking facility dropdown is functional"")",Chrome 98.0.4758.102,,,2022-02-18 14:20:44,2022-02-18 14:20:44,0.002s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:20:44,2022-02-18 14:20:48,4.481s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:20:48,2022-02-18 14:20:48,0.193s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:20:48,2022-02-18 14:20:49,0.915s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:20:49,2022-02-18 14:20:50,0.850s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(3, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:20:50,2022-02-18 14:20:51,0.973s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:20:51,2022-02-18 14:20:52,1.007s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center""))",Chrome 98.0.4758.102,,,2022-02-18 14:20:52,2022-02-18 14:20:53,0.513s,PASSED
+"verifyElementPresent(findTestObject(""Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:20:53,2022-02-18 14:20:53,0.390s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:20:53,2022-02-18 14:20:54,1.205s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC106_Verify the Book Appointment is functional,Chrome 98.0.4758.102,,,2022-02-18 14:20:54,2022-02-18 14:21:07,13.134s,PASSED
+"comment(""Checking functionality of Book Appointment."")",Chrome 98.0.4758.102,,,2022-02-18 14:20:55,2022-02-18 14:20:55,0.003s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:20:55,2022-02-18 14:20:59,4.323s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:20:59,2022-02-18 14:21:00,0.956s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:21:00,2022-02-18 14:21:01,0.927s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(3, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:21:01,2022-02-18 14:21:02,0.984s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:02,2022-02-18 14:21:03,1.002s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/input_Visit Date (Required)_visit_date""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:03,2022-02-18 14:21:04,0.463s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/div_Visit Date (Required)_input-group-addon""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:04,2022-02-18 14:21:04,0.567s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/td_28""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:04,2022-02-18 14:21:05,0.559s,PASSED
+"setText(findTestObject(""Page_AppointmentConfirmation/textarea_Comment_comment""), ""This is comment while Booking an appointment"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:05,2022-02-18 14:21:06,0.917s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/button_Book Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:06,2022-02-18 14:21:06,0.775s,PASSED
+"verifyElementPresent(findTestObject(""Page_AppointmentConfirmation/h2_Appointment Confirmation""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:21:06,2022-02-18 14:21:07,0.363s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:21:07,2022-02-18 14:21:07,0.723s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC107_Verify the Go to HomePage functionality on Appointment Confirmation page,Chrome 98.0.4758.102,,,2022-02-18 14:21:07,2022-02-18 14:21:21,13.890s,PASSED
+"comment(""Verification of click on Go To Homepage Button on Appointment Page"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:08,2022-02-18 14:21:08,0.002s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:21:08,2022-02-18 14:21:13,4.452s,PASSED
+"comment(""You are now Home Page of Cura HealthCare System"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:13,2022-02-18 14:21:13,0.003s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:13,2022-02-18 14:21:14,0.957s,PASSED
+"comment(""User is On Login Page Now"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:14,2022-02-18 14:21:14,0.003s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:21:14,2022-02-18 14:21:14,0.892s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(3, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:21:14,2022-02-18 14:21:15,0.958s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:15,2022-02-18 14:21:16,1.001s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/input_Visit Date (Required)_visit_date""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:16,2022-02-18 14:21:17,0.461s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/div_Visit Date (Required)_input-group-addon""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:17,2022-02-18 14:21:17,0.556s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/td_28""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:17,2022-02-18 14:21:18,0.471s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/button_Book Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:18,2022-02-18 14:21:19,0.891s,PASSED
+"verifyElementPresent(findTestObject(""Page_AppointmentConfirmation/h2_Appointment Confirmation""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:21:19,2022-02-18 14:21:19,0.373s,PASSED
+"verifyElementPresent(findTestObject(""Page_AppointmentConfirmation/a_Go to Homepage""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:21:19,2022-02-18 14:21:19,0.345s,PASSED
+"comment(""Go To Hmepage option is displayed on page"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:19,2022-02-18 14:21:19,0.002s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_Go to Homepage""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:19,2022-02-18 14:21:20,0.775s,PASSED
+"verifyElementPresent(findTestObject(""Page_AppointmentConfirmation/a_Make Appointment""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:21:20,2022-02-18 14:21:21,0.414s,PASSED
+"comment(""User Navigated to the Home Page after click on Go to Homepage"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:21,2022-02-18 14:21:21,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:21:21,2022-02-18 14:21:21,0.727s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC108_Verify the History functionality from Hamburger Menu,Chrome 98.0.4758.102,,,2022-02-18 14:21:21,2022-02-18 14:21:33,11.847s,PASSED
+"comment(""Verification of Functionality of History from Hamburger Menu"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:22,2022-02-18 14:21:22,0.002s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:21:22,2022-02-18 14:21:26,4.322s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:21:26,2022-02-18 14:21:26,0.163s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:26,2022-02-18 14:21:27,0.929s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:21:27,2022-02-18 14:21:28,0.921s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(3, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:21:28,2022-02-18 14:21:29,0.879s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:29,2022-02-18 14:21:30,1.026s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:30,2022-02-18 14:21:31,0.413s,PASSED
+"comment(""Clicked on Hamburgur menu"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:31,2022-02-18 14:21:31,0.002s,PASSED
+"click(findTestObject(""Page_CuraHomepage/a_History""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:31,2022-02-18 14:21:31,0.894s,PASSED
+"verifyElementPresent(findTestObject(""Page_CURA Healthcare Service/h2_History""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:21:31,2022-02-18 14:21:32,0.382s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:21:32,2022-02-18 14:21:33,1.427s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC109_Verify the Profile functionality from Hamburger Menu,Chrome 98.0.4758.102,,,2022-02-18 14:21:33,2022-02-18 14:21:46,12.557s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:21:34,2022-02-18 14:21:38,4.630s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:38,2022-02-18 14:21:39,0.985s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:21:39,2022-02-18 14:21:40,0.908s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(3, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:21:40,2022-02-18 14:21:41,0.915s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:41,2022-02-18 14:21:42,1.034s,PASSED
+"verifyElementPresent(findTestObject(""Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:21:42,2022-02-18 14:21:43,0.401s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:43,2022-02-18 14:21:43,0.412s,PASSED
+"verifyElementPresent(findTestObject(""Page_CURA Healthcare Service/a_Profile""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:21:43,2022-02-18 14:21:44,0.523s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Profile""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:44,2022-02-18 14:21:44,0.758s,PASSED
+"verifyElementPresent(findTestObject(""Page_CURA Healthcare Service/h2_Profile""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:21:44,2022-02-18 14:21:45,0.383s,PASSED
+"comment(""Profile Page get displayed after click on Profile option From Hamburger Menu"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:45,2022-02-18 14:21:45,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:21:45,2022-02-18 14:21:46,1.143s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC10_Select Value From Facility DropDown,Chrome 98.0.4758.102,,,2022-02-18 14:21:46,2022-02-18 14:21:55,9.184s,FAILED
+"comment(""Launch URL"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:46,2022-02-18 14:21:46,0.002s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:21:46,2022-02-18 14:21:51,4.358s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:21:51,2022-02-18 14:21:51,0.212s,PASSED
+"comment(""User Click on Make Appoinment button"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:51,2022-02-18 14:21:51,0.004s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:51,2022-02-18 14:21:52,0.846s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), ""John Doe"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:52,2022-02-18 14:21:53,0.881s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), ""ThisIsNotAPassword"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:53,2022-02-18 14:21:54,0.836s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:54,2022-02-18 14:21:55,1.033s,PASSED
+"comment(""User Login Sucessfully"")",Chrome 98.0.4758.102,,,2022-02-18 14:21:55,2022-02-18 14:21:55,0.002s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:21:55,2022-02-18 14:21:55,0.446s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC110_Verify the Logout Functionality from Hamburger Menu,Chrome 98.0.4758.102,,,2022-02-18 14:21:55,2022-02-18 14:22:19,24.209s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:21:56,2022-02-18 14:22:02,6.030s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:02,2022-02-18 14:22:04,1.949s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:22:04,2022-02-18 14:22:07,3.533s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(3, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:22:07,2022-02-18 14:22:11,4.117s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:11,2022-02-18 14:22:14,2.498s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:14,2022-02-18 14:22:15,1.435s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_Logout""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:15,2022-02-18 14:22:18,2.510s,PASSED
+"verifyElementPresent(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:22:18,2022-02-18 14:22:19,1.459s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC111_Verify the Home functinality from Hamburger Menu,Chrome 98.0.4758.102,,,2022-02-18 14:22:19,2022-02-18 14:22:31,11.425s,PASSED
+"comment("""")",Chrome 98.0.4758.102,,,2022-02-18 14:22:20,2022-02-18 14:22:20,0.001s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:22:20,2022-02-18 14:22:25,5.335s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:25,2022-02-18 14:22:26,0.924s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:22:26,2022-02-18 14:22:27,1.070s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(3, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:22:27,2022-02-18 14:22:28,0.915s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:28,2022-02-18 14:22:29,0.980s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:29,2022-02-18 14:22:29,0.436s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_Home""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:29,2022-02-18 14:22:30,0.837s,PASSED
+"verifyElementPresent(findTestObject(""Page_CURA Healthcare Service/h1_CURA Healthcare Service""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:22:30,2022-02-18 14:22:31,0.422s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC112_Verify User should not able to select past Date,Chrome 98.0.4758.102,,,2022-02-18 14:22:31,2022-02-18 14:22:31,0.580s,ERROR
+,,,,,,,
+Test Cases/Main Test Cases/TC12__Verify Functionality Of Checkbox Apply For Redmission,Chrome 98.0.4758.102,,,2022-02-18 14:22:31,2022-02-18 14:22:42,10.285s,FAILED
+"comment(""Launch URL"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:32,2022-02-18 14:22:32,0.003s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:22:32,2022-02-18 14:22:37,5.255s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:22:37,2022-02-18 14:22:37,0.148s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:37,2022-02-18 14:22:38,0.962s,PASSED
+"comment(""User click on Make Appoinment"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:38,2022-02-18 14:22:38,0.002s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), ""John Doe"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:38,2022-02-18 14:22:39,0.914s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), ""ThisIsNotAPassword"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:39,2022-02-18 14:22:40,0.953s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:40,2022-02-18 14:22:41,1.006s,PASSED
+"comment(""User Login Sucessfully"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:41,2022-02-18 14:22:41,0.002s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:41,2022-02-18 14:22:42,0.455s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC14_To Verify Radio Buttons is Display,Chrome 98.0.4758.102,,,2022-02-18 14:22:42,2022-02-18 14:22:52,10.835s,FAILED
+"comment(""Launch URL"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:42,2022-02-18 14:22:42,0.003s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:22:42,2022-02-18 14:22:48,5.892s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:22:48,2022-02-18 14:22:48,0.156s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:48,2022-02-18 14:22:49,0.895s,PASSED
+"comment(""User Click on Make appoinment button"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:49,2022-02-18 14:22:49,0.002s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), ""John Doe"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:49,2022-02-18 14:22:50,0.853s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), ""ThisIsNotAPassword"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:50,2022-02-18 14:22:51,0.951s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:51,2022-02-18 14:22:52,1.079s,PASSED
+"comment(""User Login Sucessfully"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:52,2022-02-18 14:22:52,0.001s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:52,2022-02-18 14:22:52,0.400s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC16_To Verify Date is Required,Chrome 98.0.4758.102,,,2022-02-18 14:22:52,2022-02-18 14:23:02,10.103s,FAILED
+"comment(""Launch URL"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:53,2022-02-18 14:22:53,0.001s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:22:53,2022-02-18 14:22:58,5.303s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:22:58,2022-02-18 14:22:58,0.155s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:22:58,2022-02-18 14:22:59,0.924s,PASSED
+"comment(""User Click on Make Appointment Button"")",Chrome 98.0.4758.102,,,2022-02-18 14:22:59,2022-02-18 14:22:59,0.001s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), username)",Chrome 98.0.4758.102,,,2022-02-18 14:22:59,2022-02-18 14:23:00,0.872s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), password)",Chrome 98.0.4758.102,,,2022-02-18 14:23:00,2022-02-18 14:23:01,0.852s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:01,2022-02-18 14:23:02,1.021s,PASSED
+"comment(""User Login Sucessfully"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:02,2022-02-18 14:23:02,0.002s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:02,2022-02-18 14:23:02,0.449s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC18_Reuse Login TestCase,Chrome 98.0.4758.102,,,2022-02-18 14:23:02,2022-02-18 14:23:13,10.750s,FAILED
+"comment(""Launch URL"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:03,2022-02-18 14:23:03,0.002s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:23:03,2022-02-18 14:23:09,5.776s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:23:09,2022-02-18 14:23:09,0.155s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""John Doe"", ""Password"":""ThisIsNotAPassword""], STOP_ON_FAILURE)",Chrome 98.0.4758.102,,,2022-02-18 14:23:09,2022-02-18 14:23:13,4.112s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:13,2022-02-18 14:23:13,0.141s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC4_Verify Title Of Application,Chrome 98.0.4758.102,,,2022-02-18 14:23:13,2022-02-18 14:23:23,9.682s,PASSED
+"openBrowser("""")",Chrome 98.0.4758.102,,,2022-02-18 14:23:14,2022-02-18 14:23:17,2.738s,PASSED
+"navigateToUrl(""https://katalon-demo-cura.herokuapp.com/"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:17,2022-02-18 14:23:19,2.343s,PASSED
+"click(findTestObject(""Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:19,2022-02-18 14:23:20,0.984s,PASSED
+"getText(findTestObject(""Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:20,2022-02-18 14:23:22,1.919s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:23:22,2022-02-18 14:23:23,0.690s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC6_Verify Make Appoinment Button,Chrome 98.0.4758.102,,,2022-02-18 14:23:23,2022-02-18 14:23:33,10.457s,FAILED
+"comment(""Launch URL"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:23,2022-02-18 14:23:23,0.026s,PASSED
+"comment(""User Login With Valid Credentials"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:23,2022-02-18 14:23:23,0.004s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:23:23,2022-02-18 14:23:28,4.738s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:23:28,2022-02-18 14:23:28,0.238s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:28,2022-02-18 14:23:30,1.245s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), ""John Doe"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:30,2022-02-18 14:23:31,0.883s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), ""ThisIsNotAPassword"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:31,2022-02-18 14:23:32,1.084s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:32,2022-02-18 14:23:33,1.039s,PASSED
+"comment(""User Login to Application"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:33,2022-02-18 14:23:33,0.002s,PASSED
+"verifyElementClickable(findTestObject(""Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment""), STOP_ON_FAILURE)",Chrome 98.0.4758.102,,,2022-02-18 14:23:33,2022-02-18 14:23:33,0.685s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC8_Verify Functionality Of Facility DropDown,Chrome 98.0.4758.102,,,2022-02-18 14:23:33,2022-02-18 14:23:45,11.806s,FAILED
+"comment(""Launch URL"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:34,2022-02-18 14:23:34,0.003s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:23:34,2022-02-18 14:23:41,6.474s,PASSED
+"comment(""User enters valid Credentials"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:41,2022-02-18 14:23:41,0.004s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:23:41,2022-02-18 14:23:41,0.330s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:41,2022-02-18 14:23:42,0.963s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), ""John Doe"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:42,2022-02-18 14:23:43,0.860s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), ""ThisIsNotAPassword"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:43,2022-02-18 14:23:44,0.840s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:44,2022-02-18 14:23:45,1.098s,PASSED
+"comment(""Login sucessfully"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:45,2022-02-18 14:23:45,0.003s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:45,2022-02-18 14:23:45,0.447s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC103_Verify Cura HelthCare Service Title is displayed on Home page,Chrome 98.0.4758.102,,,2022-02-18 14:23:45,2022-02-18 14:23:55,10.161s,FAILED
+"openBrowser(findTestData(""TestData"").getValue(1, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:23:46,2022-02-18 14:23:51,5.138s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:23:51,2022-02-18 14:23:51,0.204s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:51,2022-02-18 14:23:52,0.971s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:23:52,2022-02-18 14:23:53,0.936s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(3, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:23:53,2022-02-18 14:23:54,0.863s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:23:54,2022-02-18 14:23:55,1.086s,PASSED
+"verifyElementPresent(findTestObject(""Page_Login/Page_CURA Healthcare Service/h1_CURA Healthcare Service""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:23:55,2022-02-18 14:23:55,0.435s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC102_ Verify Login With Invalid Password,Chrome 98.0.4758.102,,,2022-02-18 14:23:55,2022-02-18 14:24:06,11.000s,PASSED
+"comment(""Story:Login To cura System using Valid UserName and Invalid Password"")",Chrome 98.0.4758.102,,,2022-02-18 14:23:56,2022-02-18 14:23:56,0.002s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:23:56,2022-02-18 14:24:01,5.383s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:24:01,2022-02-18 14:24:01,0.218s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:24:01,2022-02-18 14:24:02,0.948s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:24:02,2022-02-18 14:24:03,0.847s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(5, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:24:03,2022-02-18 14:24:04,0.884s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:24:04,2022-02-18 14:24:05,1.077s,PASSED
+"verifyElementPresent(findTestObject(""Page_CURA Healthcare Service/p_Login failed Please ensure the username and password are valid""), 0)",Chrome 98.0.4758.102,,,2022-02-18 14:24:05,2022-02-18 14:24:06,0.391s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:24:06,2022-02-18 14:24:06,0.800s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC101_Verify Login with invalid Username,Chrome 98.0.4758.102,,,2022-02-18 14:24:06,2022-02-18 14:24:17,10.407s,PASSED
+"comment(""Story:Login To cura System using Invalid UserName"")",Chrome 98.0.4758.102,,,2022-02-18 14:24:07,2022-02-18 14:24:07,0.002s,PASSED
+"comment(""Given that the user has the invalid login information"")",Chrome 98.0.4758.102,,,2022-02-18 14:24:07,2022-02-18 14:24:07,0.001s,PASSED
+openBrowser(G_SiteURL),Chrome 98.0.4758.102,,,2022-02-18 14:24:07,2022-02-18 14:24:12,4.712s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-02-18 14:24:12,2022-02-18 14:24:12,0.171s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Chrome 98.0.4758.102,,,2022-02-18 14:24:12,2022-02-18 14:24:13,0.993s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(4, 1))",Chrome 98.0.4758.102,,,2022-02-18 14:24:13,2022-02-18 14:24:14,0.876s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), ""ThisIsNotAPassword"")",Chrome 98.0.4758.102,,,2022-02-18 14:24:14,2022-02-18 14:24:15,0.815s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-02-18 14:24:15,2022-02-18 14:24:16,1.014s,PASSED
+"verifyElementPresent(findTestObject(""Page_CURA Healthcare Service/p_Login failed Please ensure the username and password are valid""), G_ShortTimeOut)",Chrome 98.0.4758.102,,,2022-02-18 14:24:16,2022-02-18 14:24:16,0.400s,PASSED
+"comment(""Error Message displayed with Invalid User name"")",Chrome 98.0.4758.102,,,2022-02-18 14:24:16,2022-02-18 14:24:16,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-02-18 14:24:16,2022-02-18 14:24:17,0.831s,PASSED

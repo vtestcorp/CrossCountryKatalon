@@ -3,8 +3,7 @@
    <description></description>
    <name>lbl_VisitDate</name>
    <tag></tag>
-   <elementGuidId>222c6c64-9c5c-41c5-8a7e-10bfd4c75e13</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>46fc49f1-29f3-4124-9275-0563c48d8381</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

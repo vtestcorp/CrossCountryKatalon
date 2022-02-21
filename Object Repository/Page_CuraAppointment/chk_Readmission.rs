@@ -3,8 +3,7 @@
    <description></description>
    <name>chk_Readmission</name>
    <tag></tag>
-   <elementGuidId>3e0eb437-4361-4cdd-b2ca-02adc27ade4d</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>6d3987bc-b833-49f0-8d4e-19270fcfac7e</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

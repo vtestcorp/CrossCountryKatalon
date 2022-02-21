@@ -3,8 +3,7 @@
    <description></description>
    <name>chk_Medicaid</name>
    <tag></tag>
-   <elementGuidId>5e6d1d5f-45f4-43c1-a633-ab7da67e1755</elementGuidId>
-   <selectorMethod>BASIC</selectorMethod>
+   <elementGuidId>a9ef1a35-94ae-4c4e-bc9f-a4290a17ff33</elementGuidId>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
